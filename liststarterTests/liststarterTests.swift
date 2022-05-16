@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import liststarter
 
 class liststarterTests: XCTestCase {
 
