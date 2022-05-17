@@ -8,24 +8,35 @@
 import SwiftUI
 
 struct VideoListView: View {
+    var videos: [Video] = VideoList.topTen;
     var body: some View {
-        List(0..<20) { item in
-            HStack{
-                Image("37-tips")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 70)
-                    .cornerRadius(5)
-                VStack(alignment: .leading,spacing: 0){
-                    Text("37 Tips for Jr Developers")
-                        .fontWeight(.semibold)
-                        .lineLimit(2)
-                        .minimumScaleFactor(0.5)
-                    Text("January 1, 2022")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
+        NavigationView{
+            List(videos, id: \.id) { video in
+                NavigationLink(
+                    destination: VideoDetailView(video: video), label: {
+                        HStack{
+                            Image(video.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 70)
+                                .cornerRadius(5)
+                                .padding(.vertical, 10)
+                                .padding(.horizontal, 10)
+                            VStack(alignment: .leading,spacing: 0){
+                                Text(video.title)
+                                    .fontWeight(.semibold)
+                                    .lineLimit(2)
+                                    .minimumScaleFactor(0.5)
+                                Text(video.uploadDate)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                                    .fontWeight(.semibold)
+                            }
+                        }
+                    })
+                
             }
+            .navigationTitle("Soan's Top 10")
         }
     }
     

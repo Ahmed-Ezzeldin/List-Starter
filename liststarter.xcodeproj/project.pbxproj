@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804BC9552833A8F500BDB70F /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804BC9542833A8F500BDB70F /* VideoDetailView.swift */; };
 		8064AD0F28326B3500DED0DA /* liststarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064AD0E28326B3500DED0DA /* liststarterApp.swift */; };
 		8064AD1128326B3500DED0DA /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064AD1028326B3500DED0DA /* VideoListView.swift */; };
 		8064AD1328326B3700DED0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8064AD1228326B3700DED0DA /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		804BC9542833A8F500BDB70F /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		8064AD0B28326B3500DED0DA /* List Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "List Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8064AD0E28326B3500DED0DA /* liststarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liststarterApp.swift; sourceTree = "<group>"; };
 		8064AD1028326B3500DED0DA /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				8064AD1228326B3700DED0DA /* Assets.xcassets */,
 				8064AD1428326B3700DED0DA /* Preview Content */,
 				8064AD382832897000DED0DA /* VideoData.swift */,
+				804BC9542833A8F500BDB70F /* VideoDetailView.swift */,
 			);
 			path = liststarter;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8064AD1128326B3500DED0DA /* VideoListView.swift in Sources */,
+				804BC9552833A8F500BDB70F /* VideoDetailView.swift in Sources */,
 				8064AD392832897000DED0DA /* VideoData.swift in Sources */,
 				8064AD0F28326B3500DED0DA /* liststarterApp.swift in Sources */,
 			);
